@@ -1,0 +1,46 @@
+#square {
+	width: 400px;
+	height: 400px;
+	background-color: #212158;
+	position: relative;
+}
+
+#square-inside {
+	background-color: #dea4de;
+	width: 50px;
+	height: 50px;
+	bottom: 0px;
+	position: absolute;
+	animation-name: goaround;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+}
+
+@keyframes goaround {
+	0% {
+		bottom: 0;
+		left: 0;
+		transform: rotate(45deg);
+	}
+	25% {
+		bottom: 0;
+		left: 350px;
+		transform: rotate(90deg);
+	}
+	50% {
+		bottom: 350px;
+		left: 350px;
+		transform: rotate(135deg);
+	}
+	75% {
+		bottom: 350px;
+		left: 0;
+		transform: rotate(180deg);
+	}
+	100% {
+		bottom: 0;
+		left: 0;
+		transform: rotate(225deg);
+	}
+}
